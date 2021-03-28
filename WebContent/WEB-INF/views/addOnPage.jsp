@@ -29,7 +29,7 @@
 	</table>
 	<br><br>
 
-	<spring:form method="post" action="./addAddOn"  modelAttribute="addOn">
+	<spring:form method="post"   modelAttribute="addOn">
 	Select Add On : <spring:select path="addOnName">
 		<spring:options items="${addOnName }"/>
 	</spring:select>
@@ -37,9 +37,9 @@
 		<br>
 
 
- 	<input type="submit" name="orderNextCoffee" value="Add More Coffee">
-		<input type="submit" name="orderCreation" value="Place Order">
-		<input type="submit" name="addAddOn" value="Add AddOn">
+ 	<a href="./addAddOn">Add AddOn</a>
+		<a href="./orderCreation">Place Order</a>
+		<a href="./coffeeSelect">Add More Coffee</a>
 		
 	</spring:form>
 </div>

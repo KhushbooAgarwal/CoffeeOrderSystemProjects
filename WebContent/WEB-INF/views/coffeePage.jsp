@@ -32,7 +32,7 @@
 	<br><br>
 	
 	
-	<spring:form method="post" action="./coffeeSelect"  modelAttribute="coffee">
+	<spring:form method="post"   modelAttribute="coffee">
 	Select Coffee Name : <spring:select path="coffeeName">
 		<spring:options items="${coffeeName }"/>
 	</spring:select>
@@ -43,10 +43,12 @@
 	</spring:select>
 		<br>
 		<br>
- 	<input type="submit" name="orderNextCoffee" value="Add More Coffee">
+ 	    <input type="submit" name="orderNextCoffee" value="Add More Coffee">
 		<input type="submit" name="orderCreation" value="Place Order">
-		<a href="./addAddOn"><input type="submit" name="addAddOn" value="Add AddOn"></a>
-		<!-- <a href="./addAddOn"></a> -->
+		<input type="submit" name="/addAddOn" value="Add AddOn">
+		<!-- <a href="./addAddOn">Add AddOn</a>
+		<a href="./orderCreation">Place Order</a>
+		<a href="./coffeeSelect">Add More Coffee</a> -->
 		
 	</spring:form>
 </div>
